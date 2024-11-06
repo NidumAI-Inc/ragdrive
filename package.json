@@ -1,7 +1,7 @@
 {
   "name": "RAGDrive",
   "private": true,
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "RAGDrive powered by nidum.ai",
   "author": "nidum info@nidum.ai",
   "main": "./dist-electron/index.js",

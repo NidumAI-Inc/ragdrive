@@ -1,7 +1,8 @@
-import { spawn } from 'child_process';
 import fs, { existsSync, rmSync } from 'fs';
+import { spawn } from 'child_process';
 import path from 'path';
 import os from 'os';
+
 import { downloadFile } from './download';
 
 const getIsSemVer = (str) => {

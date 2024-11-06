@@ -2,7 +2,7 @@ import express from 'express';
 import ogs from 'open-graph-scraper';
 import fs from 'fs/promises';
 
-import { getSublinks, crawlWebsite, convertUrlsToFilenames } from '../utils/crawler2';
+import { getSublinks, crawlWebsite, convertUrlsToFilenames } from '../utils/crawler';
 import { indexFolder } from '../utils/llama';
 import { createPath } from '../utils/path-helper';
 import logger from '../utils/logger';

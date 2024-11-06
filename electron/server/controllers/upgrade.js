@@ -19,7 +19,7 @@ const execPromise = util.promisify(exec);
 router.get('/is-latest-version-available', async (req, res) => {
   try {
     const currentVersion = packageJson.version
-    const { data } = await axios.get("https://raw.githubusercontent.com/aivfkesavan/nidum-public/main/versions.json")
+    const { data } = await axios.get("https://raw.githubusercontent.com/NidumAI-Inc/catalog/main/versions.json")
     const latestVersion = data?.[os.platform()] || data?.darwin
 
     if (!latestVersion) return res.json({ hasLatest: false })
