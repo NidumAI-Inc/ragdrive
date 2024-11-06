@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Outfit:wght@700&&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 13%;
+    --foreground: 0 0% 100%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 0 0% 8%;
+    --accent-foreground: 0 0% 98%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 20%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 0 0% 20%;
+
+    --primary-lighter: 171 77% 64%;
+    --primary-light: 172 66% 50%;
+    --primary: 173 80% 40%;
+    --primary-dark: 175 84% 32%;
+    --primary-darker: 175 77% 26%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --radius: 0.5rem;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  *,
+  body {
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(66, 66, 66, 0.4);
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(66, 66, 66, 0.4);
+  }
+
+  input,
+  textarea,
+  select {
+    @apply block w-full p-2 text-white outline-none rounded disabled:cursor-not-allowed;
+  }
+
+  button {
+    @apply px-2 py-1 w-fit rounded-sm outline-none disabled:cursor-not-allowed disabled:opacity-80;
+  }
+
+  img {
+    @apply max-w-full object-cover;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-all;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+
+  .df,
+  .dfc,
+  .dc {
+    @apply flex gap-2;
+  }
+
+  .df,
+  .dc {
+    @apply items-center;
+  }
+
+  .dfc {
+    @apply flex-col;
+  }
+
+  .dc {
+    @apply justify-center;
+  }
+
+  .font-Outfit {
+    font-family: "Outfit", serif;
+  }
+
+  .scroll-y {
+    @apply flex-1 overflow-y-auto;
+  }
+
+  .no-scroll-bar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  .mini-scroll-bar::-webkit-scrollbar,
+  .mini-scroll-bar ::-webkit-scrollbar {
+    height: var(--scroll-bar-size, 5px);
+    width: var(--scroll-bar-size, 5px);
+  }
+
+  /* input number hide arrows - Chrome, Safari, Edge, Opera */
+  .no-number-arrows::-webkit-outer-spin-button,
+  .no-number-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* input number hide arrows - Firefox */
+  .no-number-arrows {
+    -moz-appearance: textfield;
+  }
+
+  body .side-nav {
+    @apply fixed left-0 -translate-x-full;
+  }
+
+  body.open .side-nav {
+    @apply translate-x-0;
+  }
+
+  body.open .app-wrapper {
+    @apply md:pl-[var(--sidebar-width)];
+  }
+
+  .side-nav-toggle {
+    @apply bg-background hover:bg-input;
+  }
+
+  body.open .side-nav-toggle {
+    @apply bg-[#171717] hover:bg-input;
+  }
+
+  .mic-bg-animation {
+    animation: mic-bg-animation infinite 1.5s;
+  }
+
+  .loader-2 {
+    @apply size-6 rounded-full border-4 border-white;
+    aspect-ratio: 1;
+    animation:
+      l20-1 0.8s infinite linear alternate,
+      l20-2 1.6s infinite linear;
+  }
+
+  .sidebar-content::before {
+    content: "Open Sidebar";
+  }
+
+  body.open .sidebar-content::before {
+    content: "Close Sidebar";
+  }
+
+  .draggable {
+    -webkit-app-region: drag;
+  }
+
+  .non-draggable {
+    -webkit-app-region: no-drag;
+  }
+
+  .input-disabled-progoress {
+    @apply disabled:cursor-progress;
+  }
+}
+
+.animate-msg {
+  animation: scaleXAnimation 2s forwards, opacityAnimation 3s infinite;
+  transform-origin: left;
+}
+
+@keyframes mic-bg-animation {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes l20-1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+  }
+
+  12.5% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+  }
+
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  62.5% {
+    clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  75% {
+    clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+  }
+}
+
+@keyframes l20-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg)
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg)
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg)
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg)
+  }
+}
+
+@keyframes animate-msg {
+  0% {
+    transform: scale(0, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleXAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

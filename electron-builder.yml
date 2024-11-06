@@ -1,0 +1,17 @@
+appId: com.nidum.ai.ragdrive
+productName: RAGDrive
+directories:
+  buildResources: public
+win:
+  executableName: RAGDrive
+nsis:
+  artifactName: ${name}-${version}.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+appImage:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+publish:
+  provider: generic
+  url: https://releases.nidum.ai/download/downloads/

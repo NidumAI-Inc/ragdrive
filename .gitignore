@@ -1,0 +1,14 @@
+/.idea
+/.vscode
+node_modules
+.DS_Store
+*.cpuprofile
+
+/dist
+/dist-electron
+/.env
+/.eslintcache
+/.vitepress/.cache
+/src-old
+/release
+package-lock.json
