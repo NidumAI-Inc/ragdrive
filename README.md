@@ -4,11 +4,6 @@ RAGDrive is an innovative, open-source application designed to bring the power o
 
 > **Note:** RAGDrive is currently under development, and contributions are welcome!
 
-<a href="https://www.producthunt.com/posts/ragdrive-by-nidum-ai?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ragdrive-by-nidum-ai" target="_blank">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=426429&theme=dark" 
-         alt="Ragdrive by Nidum AI - Your product description here | Product Hunt" 
-         style="width: 250px; height: 54px;" width="250" height="54" />
-</a>
 
 [![RAGDrive Overview](https://img.youtube.com/vi/X385Y6qkl28/maxresdefault.jpg)](https://www.youtube.com/watch?v=X385Y6qkl28&t=18s)
 > Watch the introduction video on [YouTube](https://www.youtube.com/watch?v=X385Y6qkl28&t=18s) for a quick overview of RAGDrive.
