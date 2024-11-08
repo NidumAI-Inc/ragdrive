@@ -4,6 +4,7 @@ RAGDrive is an innovative, open-source application designed to bring the power o
 
 > **Note:** RAGDrive is currently under development, and contributions are welcome!
 
+## Featured on Product Hunt 🎉
 
 [![RagDrive on Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=ragdrive-by-nidum-ai&theme=light)](https://www.producthunt.com/posts/ragdrive-by-nidum-ai?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ragdrive-by-nidum-ai)
 
