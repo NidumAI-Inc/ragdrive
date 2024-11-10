@@ -77,7 +77,7 @@ function Anthropic() {
       </div>
 
       <div className="mb-12 text-xs text-white/60">
-        Click here to sign up for a Anthropic account: <a href="https://console.anthropic.com/login?ref=ragdrive.com" className=" text-white/90 hover:underline" target="_blank">https://console.anthropic.com/login</a>
+        Click here to sign up for a Anthropic account: <a href="https://console.anthropic.com/login?ref=nidum.ai" className=" text-white/90 hover:underline" target="_blank">https://console.anthropic.com/login</a>
       </div>
 
       <Footer onSave={onSave} />

@@ -1,9 +1,9 @@
 appId: com.nidum.ai.ragdrive
-productName: RAGDrive
+productName: Nidum AI
 directories:
   buildResources: public
 win:
-  executableName: RAGDrive
+  executableName: Nidum AI
 nsis:
   artifactName: ${name}-${version}.${ext}
   shortcutName: ${productName}

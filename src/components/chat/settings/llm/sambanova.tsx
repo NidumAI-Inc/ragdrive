@@ -77,7 +77,7 @@ function SambavaNova() {
       </div>
 
       <div className="mb-12 text-xs text-white/60">
-        Click here to sign up for a SambaNova Systems account: <a href="https://cloud.sambanova.ai?ref=ragdrive.com" className=" text-white/90 hover:underline" target="_blank">https://cloud.sambanova.ai</a>
+        Click here to sign up for a SambaNova Systems account: <a href="https://cloud.sambanova.ai?ref=nidum.ai" className=" text-white/90 hover:underline" target="_blank">https://cloud.sambanova.ai</a>
       </div>
 
       <Footer onSave={onSave} />
