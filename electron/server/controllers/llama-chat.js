@@ -12,6 +12,7 @@ router.post("/", async (req, res) => {
 
   try {
     const { modelName, messages, message } = req.body
+    const [systemPrompt, ...rest] = messages
 
     const llama = await getLlama()
     const model = await llama.loadModel({
@@ -21,9 +22,12 @@ router.post("/", async (req, res) => {
     const context = await model.createContext()
     const session = new LlamaChatSession({
       contextSequence: context.getSequence(),
+      systemPrompt: systemPrompt?.text || ""
     })
 
-    session.setChatHistory(messages)
+    if (rest?.length > 0) {
+      session.setChatHistory(rest)
+    }
 
     await session.prompt(message, {
       onTextChunk: reply => {
