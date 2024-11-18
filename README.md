@@ -4,7 +4,7 @@
 |----------|---------------|
 | ![iOS Icon](https://img.icons8.com/?size=100&id=20821&format=png&color=000000) **iOS** | [Download on the App Store](https://apps.apple.com/us/app/nidum-local-ai/id6737910747) |
 | ![Android Icon](https://img.icons8.com/color/48/000000/google-play.png) **Android** | [Download APK](https://releases.nidum.ai/download/downloads/nidum-ai-v1.0.2.apk) |
-| ![macOS Icon](https://img.icons8.com/color/48/000000/mac-os.png) **macOS** | [Download DMG](https://releases.nidum.ai/download/downloads/Nidum.AI-v-2.0.8-b.dmg) |
+| ![macOS Icon](https://img.icons8.com/?size=100&id=vCiwbOh7Uo7G&format=png&color=000000) **macOS** | [Download DMG](https://releases.nidum.ai/download/downloads/Nidum.AI-v-2.0.8-b.dmg) |
 | ![Windows Icon](https://img.icons8.com/color/48/000000/windows-10.png) **Windows** | Coming Soon 🚧 |
 
 
