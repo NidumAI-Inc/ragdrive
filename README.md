@@ -1,4 +1,12 @@
-# 🚀 RAGDrive
+## 🚀 Download RAGDrive
+
+| Platform | Download Link |
+|----------|---------------|
+| ![iOS Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/IOS_logo.svg/120px-IOS_logo.svg.png) **iOS** | [Download on the App Store](https://apps.apple.com/us/app/nidum-local-ai/id6737910747) |
+| ![Android Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Android_logo_2019.svg/120px-Android_logo_2019.svg.png) **Android** | [Download APK](https://releases.nidum.ai/download/downloads/nidum-ai-v1.0.2.apk) |
+| ![macOS Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/MacOS_wordmark_%282017%29.svg/120px-MacOS_wordmark_%282017%29.svg.png) **macOS** | [Download DMG](https://releases.nidum.ai/download/downloads/Nidum.AI-v-2.0.8-b.dmg) |
+| ![Windows Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Windows_logo_-_2021.svg/120px-Windows_logo_-_2021.svg.png) **Windows** | Coming Soon 🚧 |
+
 
 RAGDrive is an innovative, open-source application designed to bring the power of large language models (LLMs) directly to your local system. With RAGDrive, you can easily configure and run LLMs on your local machine while enjoying a suite of advanced features, such as web search, document uploads, and web scraping. RAGDrive also offers a straightforward way to connect and configure popular LLM platforms like OpenAI, Groq, Sambanova, Hugging Face, and Anthropic—all wrapped up in a simple and easy-to-use UI.
 
